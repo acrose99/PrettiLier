@@ -1,0 +1,850 @@
+/* LICENSE
+This is free to use and modify under the original rules laid out in the Lichess copright, under the GNU Affero General Public License as published by the Free Software Foundation
+
+Thanks to the Lichess team.
+-Alex Rose
+
+*/
+
+
+
+/* Defaults */
+:root {
+    /*--primaryColor: #8F93A2 !important;*/
+    /*--backgroundColor:  #0F111A !important;*/
+    /*--surfaceColor: #8F93A2 !important;*/
+    /*--surfaceColorHover: #adb5dc !important;*/
+    /*--secondaryColor: #717CB4 !important;*/
+    /*--tertiaryColor: #adb5dc !important;*/
+    /*--defaultWhite: #8F93A2 !important;*/
+
+    --primaryColor: #f2f4ff !important;
+    --mainButtonColor: #43495a !important;
+    --backgroundColor: #0F111A !important;
+    --surfaceColor: #8F93A2 !important;
+    --surfaceColorHover: #ADB5DC !important;
+    --secondaryColor: #717CB4 !important;
+    --tertiaryColor: #282b34 !important;
+    --defaultWhite: #FFFFFF !important;
+    --arrowColor: #550ec7 !important;
+    --activeBoardColor: #4a5588 !important;
+    --primaryBoardColor: #21273e !important;
+}
+
+body {
+    color: var(--primaryColor);
+    background: var(--backgroundColor);
+}
+::placeholder {
+    color: var(--primaryColor);
+}
+.button:not(.disabled):hover {
+    color: var(--defaultWhite);
+    background: var(--surfaceColorHover);
+}
+
+.button {
+    background: var(--secondaryColor);
+}
+.fbt.active {
+    background: var(--secondaryColor) !important;
+    color: var(--defaultWhite);
+}
+.fbt:hover:not(.disabled):not([disabled]) {
+    background: var(--secondaryColor);
+    color: var(--defaultWhite);
+}
+
+/*Logo */
+.site-title a {
+    color: var(--primaryColor) !important;
+}
+.site-title span {
+    color: var(--secondaryColor);
+}
+
+/* Top Navbar */
+/* Navbar: Challenge/Search/Profile/Notifications */
+.site-buttons .link {
+    color: var(--secondaryColor);
+}
+.site-buttons .link:hover {
+    color: var(--defaultWhite);
+}
+.site-buttons .shown .toggle {
+    background: var(--tertiaryColor);
+    color: var(--defaultWhite);
+}
+@media (max-width: 979px) {
+    #topnav  {
+        background: var(--tertiaryColor);
+    }
+}
+#topnav div a {
+    color: #fff;
+    background: var(--tertiaryColor)
+}
+
+#topnav.hover section:hover > a, #topnav section:active > a {
+    background: var(--tertiaryColor)
+}
+.topnav-toggle:checked ~ .hbg {
+    position: fixed;
+    background: var(--tertiaryColor)
+}
+
+/* HOMEPAGE */
+
+/* HOMEPAGE: Lobby */
+.lpools > div {
+    background: var(--mainButtonColor) !important;
+    color: var(--primaryColor);
+}
+.lpools > div:hover {
+    background: var(--surfaceColorHover);
+}
+.lobby__counters {
+    background: var(--backgroundColor);
+}
+
+.lobby__app__content {
+    background: none;
+}
+.lpools .active {
+    background: var(--backgroundColor)
+}
+.tabs-horiz span::after {
+    background: var(--secondaryColor);
+}
+.tabs-horiz, .lobby__counters, .lobby__streams .stream, .timeline, .lobby__about a, .timeline .entry a {
+    color: var(--primaryColor);
+}
+.tabs-horiz span.active {
+    color: var(--secondaryColor);
+}
+.tabs-horiz {
+    border-color: var(--tertiaryColor);
+}
+.data-count::after, .unread, .button.active, .btn-rack__btn.active {
+    background: var(--secondaryColor);
+    color: var(--defaultWhite);
+}
+/* Homepage: Sidebar */
+
+.tour-spotlight.invert,
+.tour-spotlight.event-spotligh.event-spotlight,
+.lobby__spotlights,
+.tour-spotlight {
+    background: var(--backgroundColor);
+    color: var(--primaryColor);
+    border-bottom: 1px solid var(--primaryColor);
+}
+.tour-spotlight i.img::before {
+    color: var(--secondaryColor);
+    font-size: 42px;
+}
+.button.button-empty:not(.disabled):hover,
+.button.button-empty.button-green:not(.disabled):hover,
+.button.button-empty.button-red:not(.disabled):hover,
+.button.button-metal,
+#friend_box .friend_box_title,
+.btn-rack__btn,
+.btn-rack form {
+    background: var(--mainButtonColor)
+}
+.lobby__streams .stream.highlight strong {
+    color: var(--secondaryColor)
+}
+.lobby__streams .stream {
+    color: var(--primaryColor);
+}
+.timeline .entry::after {
+    background: linear-gradient(to left, var(--secondaryColor) 20%, var(--primaryColor))
+}
+
+/* Homepage: Lobby/Correspondence */
+.hooks__list td:first-child ::before {
+    color: var(--secondaryColor)
+}
+.hooks__list td:last-child ::before {
+    color: var(--secondaryColor)
+}
+.hooks__list td {
+    background: var(--tertiaryColor);
+}
+.hook__filters {
+    background: var(--tertiaryColor);
+}
+.hook__filters .regular-checkbox:checked {
+    background: var(--secondaryColor);
+    border-color: var(--backgroundColor);
+}
+#challenge-app .empty {
+    background: var(--tertiaryColor);
+    padding: 2rem 0;
+}
+#challenge-app .create {
+    background: var(--secondaryColor);
+    color: var(--defaultWhite);
+}
+/* Homepage: Create a game */
+#modal-wrap {
+    background: var(--tertiaryColor);
+}
+.game-setup .optional_config, .game-setup .ratings {
+    background: var(--tertiaryColor);
+}
+.game-setup group.radio input:checked + label {
+    background: var(--surfaceColorHover);
+    color: var(--defaultWhite);
+}
+.game-setup .color-submits__button {
+    background: #494b56 !important;
+    color: #fff;
+}
+
+/* Playing */
+    /* Playing: Chat */
+    .game__meta {
+        background: var(--tertiaryColor);
+    }
+    .mchat__tab-active {
+        color: var(--primaryColor);
+        background: var(--tertiaryColor) !important;
+    }
+    .mchat__tab input:checked {
+        background: var(--secondaryColor);
+        border-color: var(--secondaryColor);
+    }
+    .mchat__tab:hover {
+        background: #4b526d;
+    }
+    .mchat__messages {
+        background: var(--tertiaryColor);
+    }
+    .mchat__say,
+    .mchat__presets,
+    .mchat__content.note textarea {
+        background: var(--tertiaryColor);
+        color: var(--primaryColor);
+    }
+    /* BOARD*/
+
+    /* Board: Takeback */
+    .rcontrols .suggestion, .rcontrols .pending, .rcontrols .negotiation {
+        background: var(--tertiaryColor);
+        color: var(--primaryColor);
+    }
+    .expiration {
+        background: var(--secondaryColor);
+    }
+    .expiration.emerg {
+        background: var(--surfaceColorHover);
+    }
+
+    /* Board: Pieces/Squares */
+    square.last-move {
+        background: var(--surfaceColorHover);
+    }
+    .cg-shapes g line  /*Arrows*/ {
+        stroke: var(--arrowColor) !important;
+    }
+    .cg-shapes defs marker path /*Arrowheads*/ {
+        fill: var(--arrowColor) !important;
+    }
+    .orientation-white --primaryBoardColor.files coord:nth-child(2n), .orientation-white .ranks coord:nth-child(2n+1), .orientation-black .files coord:nth-child(2n+1), .orientation-black .ranks coord:nth-child(2n) {
+        color: #4a5588;
+    }
+    .orientation-white .files coord:nth-child(2n+1), .orientation-white .ranks coord:nth-child(2n), .orientation-black .files coord:nth-child(2n), .orientation-black .ranks coord:nth-child(2n+1) {
+        color: var(--defaultWhite)
+    }
+    square.selected {
+        background-color: var(--activeBoardColor);
+    }
+    square.move-dest {
+        background: radial-gradient( var(--activeBoardColor) 19%, rgba(0,0,0,0) 20%);
+        pointer-events: auto;
+    }
+    square.move-dest:hover {
+        background: var(--activeBoardColor);
+    }
+
+    /*History/Analysis/Sidebar */
+    .game__meta__infos::before {
+        color: var(--secondaryColor);
+    }
+    .round__app__table {
+        background: var(--primaryBoardColor);
+    }
+    .rclock.running .time {
+        background: var(--primaryBoardColor);
+        color: var(--defaultWhite);
+    }
+    rm6 {
+        background: var(--primaryBoardColor);
+    }
+    rm6 i5z {
+        background: #282c39;
+    }
+    .pv_box {
+        background: #282c39;
+    }
+    .tview2 {
+        background: #282c39;
+    }
+    .crosstable__users,
+    .crosstable__score,
+    .crosstable povs:hover,
+    .cmn-toggle + label::after,
+    .rcontrols .rematch.fbt,
+    #powerTip .forecast-info .title {
+        background: #282b34
+    }
+
+    button.fbt {
+        background: #282b34
+    }
+    .fbt.disabled,
+    .fbt[disabled] {
+        opacity: 1;
+        cursor: default;
+        background: #282b34
+    }
+    a.fbt:nth-child(6) {
+        background: #282b34
+    }
+    rm6 .fbt, rm6 .noop {
+        background: #282b34
+    }
+    .rclock .bar {
+        background: #adb5dc;
+    }
+    .rclock .time {
+        background: #282b34
+    }
+    .ricons {
+        background: var(--primaryBoardColor);
+    }
+    .ricons .fbt {
+        background: #3d4257
+    }
+    move.hist {
+        background: #3d4257
+    }
+    .tview2-column > index {
+        background: #282b34
+    }
+    .ceval {
+        background: #282b34;
+    }
+    .cmn-toggle:checked + label::before {
+        background-color: #717CB4;
+    }
+    .eval-gauge {
+        background: #adb5dc;
+    }
+    .eval-gauge .black {
+        background: #21273E;
+    }
+    .analyse__clock.top,
+    .analyse__clock.bottom {
+        background: var(--primaryBoardColor);
+    }
+    .analyse__clock.top.active,
+    .analyse__clock.active {
+        background: #5f647b;
+    }
+    .analyse__moves .result,
+    .analyse__moves .status {
+        background: #282b34;
+        text-align: center;
+    }
+/* Puzzles */
+/* Puzzles: Sidebar Information */
+.puzzle__side__user {
+    background: #21273E;
+}
+.puzzle__side__theme {
+    background: #21273E;
+}
+.puzzle__side__config {
+    background: #21273E;
+}
+.puzzle__side__metas {
+    background: #21273E;
+}
+.box { /*Jump to next puzzle immediatly */
+    background: #282b34
+}
+.puzzle__feedback {
+    background: #282b34;
+}
+.puzzle__session a.current {
+    background: #717CB4;
+}
+.glowing {
+    -webkit-animation: none;
+    animation: none;
+}
+/* Leaderboards/Updates/Forums (mainly on homepage) */
+.community__leaders .leaderboards li:nth-child(2n) {
+    background: var(--primaryBoardColor);
+}
+.community__leaders .leaderboards h2 {
+    background: var(--tertiaryColor);
+}
+.community__leaders .leaderboards h2 a {
+    color: var(--primaryColor);
+    font-weight: bolder;
+}
+.user-link.online .line {
+    color: var(--secondaryColor);
+    opacity: 0.9;
+}
+.user-link .line {
+    color: var(--secondaryColor);
+    opacity: 0.9;
+}
+.text[data-icon]::before {
+    color: var(--secondaryColor);
+}
+.lobby__box__content {
+    background: var(--tertiaryColor);
+}
+.lobby__box tr:nth-child(2n) {
+    background: var(--primaryBoardColor);
+}
+#hook .opponent,
+.lobby__box__top {
+    background: var(--tertiaryColor);
+}
+.lobby__support a {
+    background: var(--tertiaryColor);
+}
+.lobby__support i::before {
+    color: var(--secondaryColor);
+}
+.lobby__support__text {
+    color: var(--secondaryColor);
+}
+.lobby__support a:hover {
+    background: var(--mainButtonColor);
+}
+.lobby__blog .post:hover {
+    background:var(--mainButtonColor);
+}
+.forum .slist thead {
+    background:var(--tertiaryColor);
+}
+.slist tbody tr:nth-child(2n) {
+    background: var(--tertiaryColor);
+}
+.forum.forum-categ .sticky {
+    background: var(--tertiaryColor);
+}
+
+/* Friends */
+.button.button-metal:not(.disabled):hover,
+#friend_box .friend_box_title:hover,
+.btn-rack__btn:hover,
+.btn-rack form:hover {
+    background: var(--secondaryColor);
+    color: var(--primaryColor);
+}
+.crosstable fill,
+.crosstable povs {
+    background: #282b34;
+}
+.crosstable povs.current a {
+    background: #0F1424;
+    color: #8F93A2;
+    opacity: 1 !important;
+}
+
+/* Practice */
+/* Practice: Homescreen */
+.practice-app .study.ongoing {
+    color: #bfc3d5;
+    background: #282b34;
+}
+.practice-app .ribbon {
+    background-color: #adb5dc;
+    color: #282b34;
+}
+.practice-app .ribbon::before,
+.practice-app .ribbon::after {
+    border-top: 3px solid #717CB4;
+}
+.practice-side {
+    background: #0F1424;
+    color: #8F93A2;
+}
+.practice-side .progress .text {
+    background-color: #adb5dc;
+    color: #282b34;
+}
+
+/*TODO: Change the board */
+/* Studies */
+.studies .study {
+    background: #282b34;
+    color: #8F93A2;
+}
+.studies .study .overlay {
+    color: #8F93A2;
+}
+.overlay[title] {
+    content: attr(title);
+    color: #8F93A2 !important;
+}
+.study-index .box__top .search {
+    background: #282b34
+}
+.search > input:nth-child(1) {
+    background: #0F1424;
+}
+.mselect,
+.mselect__label,
+.mselect__list,
+.mselect__list > * {
+    color: #fff;
+    background: #717CB4;
+}
+.mselect__list {
+    color: #fff;
+    background: #717CB4;
+}
+.mselect__list .current {
+    background: #adb5dc;
+}
+a.current {
+    background: #282b34;
+    color: #fff;
+}
+.mselect__label:hover {
+    background: #adb5dc;
+    color: #fff;
+}
+
+/* Preferences Dropdown Menu */
+.site-buttons .dropdown {
+    background: #282b34;
+}
+#dasher_app .sub::before {
+    color: #717CB4;
+}
+#dasher_app .head::before {
+    color: #717CB4;
+    opacity: 0.8;
+}
+#dasher_app .selector a.active {
+    background: #adb5dc !important;
+    color: #282b34 !important;
+    font-weight: bold;
+}
+#dasher_app .selector a:hover::before {
+    opacity: 1;
+    color: #fff;
+}
+#dasher_app .selector a:hover {
+    background: #515774;
+}
+#dasher_app .langs .current {
+    background: #515774 !important;
+    color: #fff !important;
+    border-left: none;
+}
+#dasher_app .links a:hover, #dasher_app .links a:hover::before, #dasher_app .links button:hover, #dasher_app .subs .sub:hover {
+    background: #515774;
+}
+
+/* Preferences */
+/* Preferences: Buttons */
+.slist thead,
+.cmn-toggle + label::after,
+group.radio label {
+    background: #21273E;
+}
+.account group.radio input:checked + label {
+    background: #717CB4;
+    color: #e3e3e3;
+}
+.cmn-toggle:hover + label::after,
+group.radio label:hover {
+    background: #515774;
+    color: #ccc;
+}
+textarea {
+    color: white;
+}
+/* Profile */
+/* Profile: Sidebar/Variants */
+.sub-ratings h3 {
+    color: #e3e3e3;
+}
+.sub-ratings a::before {
+    color: #717CB4;
+}
+.sub-ratings a:hover {
+    background: #717cb4;
+    color: #fff;
+}
+.sub-ratings strong {
+    color: #e3e3e3;
+}
+.sub-ratings a rating span,
+.sub-ratings a .rank {
+    color: #e3e3e3;
+}
+.sub-ratings a.active::before {
+    color: #fff;
+}
+.sub-ratings a:hover::before {
+    color: #fff;
+    opacity: 1;
+}
+.sub-ratings a.active {
+    background: #717cb4;
+    color: #fff;
+}
+
+/* Profile: Landing Screen */
+.user-show__header {
+    background: #282b34;
+    padding: 2em 1.5em 1em 1.5em;
+    flex-flow: row nowrap;
+}
+.utitle {
+    color: var(--secondaryColor);
+    font-weight: bold;
+}
+.user-show__social {
+    background: #282b34;
+}
+.user-show .number-menu .to-games.active,
+.user-show #games.number-menu {
+    background: #282b34 !important;
+}
+.number-menu {
+    background: #282b34;
+    display: flex;
+    -webkit-user-select: none;
+    user-select: none;
+}
+g.highcharts-button rect {
+    fill: #717CB4 !important;
+}
+#us_profile .insight {
+    color: #717CB4;
+}
+/* Profile: Activity */
+.crosstable__users,
+.crosstable__score,
+.crosstable povs:hover,
+.cmn-toggle + label::after,
+.user-show .angles {
+    background: #515774;
+}
+.number-menu--tabs .nm-item.active {
+    background: #282b34;
+}
+.activity section h2 {
+    color: #717CB4;
+    font-size: 1.2em;
+}
+.activity section h2 time {
+    background: none;
+}
+.activity .entry > i {
+    background-color: #717CB4;
+    border: 3px solid #0F1424;
+    border-radius: 50%;
+    color: #fff;
+}
+.activity .entries {
+    border-left: 3px solid #717CB4;
+}
+/* Profile: Games */
+.game-row:nth-child(2n+1) {
+    background: #43495a;
+}
+.game-row {
+    color: #d1d5e3;
+}
+/* Profile: Trophies */
+.trophy.patron {
+    color: #717CB4;
+}
+.trophy.icon3d {
+    color: #717CB4;
+}
+.trophy.patron:hover {
+    -webkit-animation: none;
+    animation: none;
+}
+.fire-trophy,
+.trophy.streaming,
+.trophy.patron:hover {
+    text-shadow: 0 0.008em 0.127em #d1d5e3, 0.055em -0.066em 0.2em #d1d5e3, -0.111em -0.127em 0.272em #d1d5e3, 0.111em -0.272em 0.411em #d1d5e3, -0.111em -0.456em 0.416em #d1d5e3, 0 -0.533em 0.577em #d1d5e3, 0.055em -0.55em 0.533em #d1d5e3;
+}
+/* Profile: Stats */
+.perf-stat .counter tr.full td:last-child {
+    background: #282b34;
+}
+
+/* LichessTV */
+.tv-channel > span::before {
+    color: #717CB4;
+}
+.tv-channel.active > span::before {
+    color: #717CB4;
+}
+.subnav a::after {
+    background: #717CB4;
+}
+.subnav a.active {
+    color: #717CB4;
+}
+/* Broadcasts Landing Page */
+.relay-widget::before {
+    color: #717CB4;
+}
+.relay-widget:hover {
+    background: #43495a;
+}
+.relay-widget:hover::before {
+    color: #fff;
+}
+
+/* Analysis Board */
+.mselect__label span::before{
+    color: #fff !important
+}
+.mselect__label::after {
+    color: #fff;
+}
+.analyse__tools {
+    background: #282b34;
+}
+.explorer-box tr:nth-child(2n) {
+    background: #21273e;
+}
+.analyse__tools .sub-box, .action-menu {
+    border-bottom: 3px solid #717CB4;
+}
+.practice-box .comment {
+    background: #282b34;
+}
+.action-menu__tools .button {
+    color: #717CB4;
+}
+/* Board Editor */
+.board-editor__tools .metadata {
+    background: #282b34;
+}
+.board-editor__tools select {
+    background: #282b34;
+}
+#variants {
+    background: #282b34;
+}
+
+/* Puzzle Storm */
+
+
+/* Todo fix the puzzle storm log */
+
+.storm--end__score {
+    justify-content: center;
+    align-items: center;
+    background: #717CB4;
+    color: #fff;
+    padding: 1em 3em;
+}
+.storm__start {
+    color: #717CB4;
+}
+.storm__solved__text {
+    color: #717CB4;
+    margin-right: 1rem;
+    transition: 0s ;
+}
+.storm__combo__bar__in {
+    background: #adb5dc;
+    box-shadow: 0 0 15px #717CB4;
+}
+.storm__combo__level {
+    background: #adb5dc;
+}
+.storm__control__end.button.button-empty {
+    color: #adb5dc;
+}
+.storm__control__reload.button.button-empty {
+    color: #adb5dc;
+}
+.storm--end__statsbox {
+    background: #282b34;
+}
+.storm__side {
+    background: #282b34;
+}
+.storm--end__history__filter {
+    background: #717CB4 !important;
+    color: white !important;
+}
+.storm-dashboard__high__period {
+    background: #717CB4;
+    color: white;
+}
+
+/* Highscores Page */
+.highlight-alltime .storm-dashboard__high__period:first-child {
+    background: linear-gradient(145deg, rgba(255, 255, 255, .3) 0%, transparent 55%) #717CB4;
+    color: #fff;
+}
+.storm-dashboard__history number.score {
+    color: #717CB4;
+}
+
+/* Customizing Board Pieces
+.is2d .pawn.white {
+    background-image: url('[URL Here]')
+}
+.is2d .knight.white {
+    background-image: url('[URL Here]')
+}
+.is2d .bishop.white {
+    background-image: url('[URL Here]')
+}
+.is2d .rook.white {
+    background-image: url('[URL Here]')
+}
+.is2d .queen.white {
+    background-image: url('[URL Here]')
+}
+.is2d .king.white {
+    background-image: url('[URL Here]')
+}
+.is2d .pawn.black {
+    background-image: url('[URL Here]')
+}
+.is2d .knight.black {
+    background-image: url('[URL Here]')
+}
+.is2d .bishop.black {
+    background-image: url('[URL Here]')
+}
+.is2d .rook.black {
+    background-image: url('[URL Here]')
+}
+.is2d .queen.black {
+    background-image: url('[URL Here]')
+}
+.is2d .king.black {
+    background-image: url('[URL Here]')
+}
+
+*/
+
+
+/* Customizing Board Tiles */

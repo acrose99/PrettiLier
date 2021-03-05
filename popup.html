@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Traversy Media Quick Launcher</title>
+    <link href="popupStyles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css" />
+</head>
+
+<body>
+<div id="logoContainer">
+    <img src="./logo.svg" alt="logo" class="logo">
+</div>
+<p id="slogan">Prettier and Customizable Lichess</p>
+
+<form id="list">
+    <div class="listItem">
+        <span>primary color</span>
+        <div id="primaryColor"></div>
+    </div>
+    <div class="listItem">
+        <span>secondary color</span>
+        <div id="secondaryColor"></div>
+    </div>
+    <div class="listItem">
+        <span>tertiary color</span>
+        <div id="tertiaryColor"></div>
+    </div>
+    <div class="listItem">
+        <span>background color</span>
+        <div id="backgroundColor"></div>
+    </div>
+    <div class="listItem">
+        <span>surface color</span>
+        <div id="surfaceColor"></div>
+    </div>
+    <div class="listItem">
+        <span>surface color hover</span>
+        <div id="surfaceColorHover"></div>
+    </div>
+    <div class="listItem">
+        <span>Main Button Color</span>
+        <div id="mainButtonColor"></div>
+    </div>
+    <div class="listItem">
+        <span>default white</span>
+        <div id="defaultWhite"></div>
+    </div>
+    <div class="listItem">
+        <span>Arrow Board Color</span>
+        <div id="arrowColor"></div>
+    </div>
+    <div class="listItem">
+        <span>Active Board Color</span>
+        <div id="activeBoardColor"></div>
+    </div>
+    <div class="listItem">
+        <span>Primary Board Color</span>
+        <div id="primaryBoardColor"></div>
+    </div>
+    <button id="resetButton">
+        Reset to your Default
+    </button>
+    <button id="resetliChessButtonDark">
+        Dark Theme
+    </button>
+    <button id="resetliChessButtonLight">
+        Light Theme
+    </button>
+</form>
+<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+<script src="popup.js" type="module"></script>
+</body>
+
+</html>

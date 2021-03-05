@@ -1,0 +1,30 @@
+{
+  "name": "PrettiLier",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Prettier and Customizable Lichess.",
+  "icons": {
+    "128": "128.png"
+  },
+  "content_scripts": [{
+    "matches": ["*://lichess.org/*"],
+    "css": ["styles.css"],
+    "js": ["content.js"]
+  }],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "storage", "declarativeContent", "*://*/*"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistant": false
+  },
+  "content_security_policy": "script-src 'self' https://cdn.jsdelivr.net/; object-src 'self'",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{8ad4bea8-ad8d-4e98-b434-a76065dee6cb}",
+      "strict_min_version": "42.0"
+    }
+  }
+
+}
