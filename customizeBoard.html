@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PrettiLier</title>
+    <link href="popupStyles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"/>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+</head>
+<body>
+    <div id="logoContainer">
+        <img src="./logo.svg" alt="logo" class="logo">
+    </div>
+    <p class="advice">Lichess uses images for chess pieces (rather then svgs) so if you would like to customize them, you will either need to upload an image or use an url.</p>
+    <div style="display: flex" class="pieceColorDropdown">
+        <h1>White</h1>
+        <img id="caretWhite" class="caret" src="./caret.svg" alt="caret">
+    </div>
+    <div id="whitePieceContainer">
+        <form class="piecePicker" action="">
+            <h2>White King</h2>
+            <label>Upload White King Image
+                <input id="whiteKingFile" type="file">
+            </label>
+            <label> Upload White King URL
+                <input id="whiteKingURL" type="url">
+            </label>
+        </form>
+        <form class="piecePicker" action="">
+            <h2>White Queen</h2>
+            <label>Upload White Queen Image
+                <input id="wlackQueenFile" type="file">
+            </label>
+            <label> Upload White Queen URL
+                <input id="wlackQueenURL" type="url">
+            </label>
+        </form>
+        <form class="piecePicker" action="">
+            <h2>White Pawn</h2>
+            <label>Upload White Pawn Image
+                <input id="whitePawnFile" type="file">
+            </label>
+            <label> Upload White Pawn URL
+                <input id="whitePawnURL" type="url">
+            </label>
+        </form>
+        <form class="piecePicker" action="">
+            <h2>White Bishop</h2>
+            <label>Upload White Bishop Image
+                <input id="whiteBishopFile" type="file">
+            </label>
+            <label> Upload White Bishop URL
+                <input id="whiteBishopURL" type="url">
+            </label>
+        </form>
+        <form class="piecePicker" action="">
+            <h2>White Knight</h2>
+            <label>Upload White Knight Image
+                <input id="whiteKnightFile" type="file">
+            </label>
+            <label> Upload White Knight URL
+                <input id="whiteKnightURL" type="url">
+            </label>
+        </form>
+        <form class="piecePicker" action="">
+            <h2>Black Rook</h2>
+            <label>Upload White Rook Image
+                <input id="whiteRooktFile" type="file">
+            </label>
+            <label> Upload White Rook URL
+                <input id="whiteRookURL" type="url">
+            </label>
+        </form>
+    </div>
+
+    <div style="display: flex" class="pieceColorDropdown">
+        <h1>Black</h1>
+        <img id="caretBlack" class="caret" src="./caret.svg" alt="caret">
+    </div>
+    <div id="blackPieceContainer">
+        <form class="piecePicker" action="">
+            <label>Upload Black King Image
+                <input id="blackKingFile" type="file">
+            </label>
+            <label> Upload Black King URL
+                <input id="blackKingURL" type="url">
+            </label>
+        </form>
+        <form class="piecePicker" action="">
+            <h2>Black Queen</h2>
+            <label>Upload Black Queen Image
+                <input id="blackQueenFile" type="file">
+            </label>
+            <label> Upload Black Queen URL
+                <input id="blackQueenURL" type="url">
+            </label>
+        </form>
+        <form class="piecePicker" action="">
+            <h2>Black Pawn</h2>
+            <label>Upload Black Pawn Image
+                <input id="blackPawnFile" type="file">
+            </label>
+            <label> Upload Black Pawn URL
+                <input id="blackPawnURL" type="url">
+            </label>
+        </form>
+        <form class="piecePicker" action="">
+            <h2>Black Bishop</h2>
+            <label>Upload Black Bishop Image
+                <input id="blackBishopFile" type="file">
+            </label>
+            <label> Upload Black Bishop URL
+                <input id="blackBishopURL" type="url">
+            </label>
+        </form>
+        <form class="piecePicker" action="">
+            <h2>Black Knight</h2>
+            <label>Upload Black Knight Image
+                <input id="blackKnightFile" type="file">
+            </label>
+            <label> Upload Black Knight URL
+                <input id="blackKnightURL" type="url">
+            </label>
+        </form>
+        <form class="piecePicker" action="">
+            <h2>Black Rook</h2>
+            <label>Upload Black Rook Image
+                <input id="blackRookFile" type="file">
+            </label>
+            <label> Upload Black Rook URL
+                <input id="blackRookURL" type="url">
+            </label>
+        </form>
+    </div>
+</body>
+<script src="customizeBoard.js"></script>
+</html>

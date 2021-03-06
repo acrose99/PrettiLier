@@ -29,6 +29,7 @@ Thanks to the Lichess team.
     --arrowColor: #550ec7 !important;
     --activeBoardColor: #4a5588 !important;
     --primaryBoardColor: #21273e !important;
+    --secondaryBoardColor: #282c39 !important;
 }
 
 body {
@@ -284,13 +285,13 @@ body {
         background: var(--primaryBoardColor);
     }
     rm6 i5z {
-        background: #282c39;
+        background: var(--primaryBoardColor);
     }
     .pv_box {
-        background: #282c39;
+        background: var(--secondaryBoardColor);
     }
     .tview2 {
-        background: #282c39;
+        background: var(--secondaryBoardColor);
     }
     .crosstable__users,
     .crosstable__score,
@@ -298,53 +299,53 @@ body {
     .cmn-toggle + label::after,
     .rcontrols .rematch.fbt,
     #powerTip .forecast-info .title {
-        background: #282b34
+        background: var(--secondaryBoardColor);
     }
 
     button.fbt {
-        background: #282b34
+        background: var(--secondaryBoardColor);
     }
     .fbt.disabled,
     .fbt[disabled] {
         opacity: 1;
         cursor: default;
-        background: #282b34
+        background: var(--secondaryBoardColor);
     }
     a.fbt:nth-child(6) {
-        background: #282b34
+        background: var(--secondaryBoardColor);
     }
     rm6 .fbt, rm6 .noop {
-        background: #282b34
+        background: var(--secondaryBoardColor);
     }
     .rclock .bar {
-        background: #adb5dc;
+        background: var(--secondaryBoardColor);
     }
     .rclock .time {
-        background: #282b34
+        background: var(--secondaryBoardColor);
     }
     .ricons {
         background: var(--primaryBoardColor);
     }
     .ricons .fbt {
-        background: #3d4257
+        background: var(--secondaryBoardColor);
     }
     move.hist {
-        background: #3d4257
+        background: var(--secondaryBoardColor);
     }
     .tview2-column > index {
-        background: #282b34
+        background: var(--secondaryBoardColor);
     }
     .ceval {
-        background: #282b34;
+        background: var(--secondaryBoardColor);
     }
     .cmn-toggle:checked + label::before {
-        background-color: #717CB4;
+        background: var(--secondaryColor);
     }
     .eval-gauge {
-        background: #adb5dc;
+        background: var(--surfaceColorHover);
     }
     .eval-gauge .black {
-        background: #21273E;
+        background: var(--primaryBoardColor);
     }
     .analyse__clock.top,
     .analyse__clock.bottom {
@@ -352,12 +353,11 @@ body {
     }
     .analyse__clock.top.active,
     .analyse__clock.active {
-        background: #5f647b;
+        background: var(--tertiaryColor);
     }
     .analyse__moves .result,
     .analyse__moves .status {
-        background: #282b34;
-        text-align: center;
+        background: var(--tertiaryColor);
     }
 /* Puzzles */
 /* Puzzles: Sidebar Information */
